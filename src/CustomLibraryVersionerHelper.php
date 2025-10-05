@@ -8,14 +8,17 @@ namespace Drupal\custom_library_versioner;
 class CustomLibraryVersionerHelper {
 
   /**
-   * @var string
-   *
    * Drupal's root path.
+   *
+   * @var string
    */
   private string $root;
 
   /**
+   * CustomLibraryVersionHelper constructor.
+   *
    * @param string $root
+   *   Drupal's root path.
    */
   public function __construct(string $root) {
     $this->root = $root;
@@ -26,8 +29,6 @@ class CustomLibraryVersionerHelper {
    *
    * @param array $libraries
    *   Library definitions from css/js alter hooks.
-   *
-   * @return void
    */
   public function setVersion(array &$libraries): void {
     $custom_library_version = $this->getCustomLibraryVersionFile();
