@@ -1,4 +1,4 @@
 services:
-  library.discovery.parser:
-    class: Drupal\custom_theme_library_versioner\LibraryDiscoveryParser
-    arguments: ['%app.root%', '@module_handler', '@theme.manager', '@stream_wrapper_manager', '@library.libraries_directory_file_finder', '@extension.path.resolver', '@plugin.manager.sdc']
+  custom_theme_library_versioner.helper:
+    class: Drupal\custom_theme_library_versioner\CustomThemeLibraryVersionerHelper
+    arguments: ['%app.root%']
