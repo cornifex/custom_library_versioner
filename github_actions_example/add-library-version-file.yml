@@ -1,0 +1,13 @@
+name: Add CUSTOM_LIBRARY_VERSION file.
+on:
+  push:
+    tags:
+    - 'v*'
+jobs:
+  add-version-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create version file.
+        run: echo ${{ github.ref_name }} > CUSTOM_LIBRARY_VERSION
+      - name: Commit/deploy version file.
+        run: # Commit and deploy the file, etc.
