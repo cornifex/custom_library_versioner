@@ -34,7 +34,7 @@ class CustomThemeLibraryVersionerHelper {
     foreach ($libraries as &$library) {
       if (!empty($library['version']) && $library['version'] === 'CUSTOM_LIBRARY_VERSION') {
         if (!$custom_library_version) {
-          unset($library['version']);
+          $library['version'] = \Drupal::VERSION;
           continue;
         }
         $library['version'] = $custom_library_version;
