@@ -11,9 +11,9 @@ class LibraryDiscoveryParser extends CoreLibraryDiscoveryParser {
 
   public function buildByExtension($extension) {
     $libraries = parent::buildByExtension($extension);
+    $custom_library_version = $this->getCustomLibraryVersionFile();
     foreach ($libraries as &$library) {
       if (!empty($library['version']) && $library['version'] === 'CUSTOM_LIBRARY_VERSION') {
-        $custom_library_version = $this->getCustomLibraryVersionFile();
         if (!$custom_library_version) {
           unset($library['version']);
           continue;
