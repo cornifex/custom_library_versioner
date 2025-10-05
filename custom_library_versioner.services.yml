@@ -1,0 +1,4 @@
+services:
+  custom_library_versioner.helper:
+    class: Drupal\custom_library_versioner\CustomLibraryVersionerHelper
+    arguments: ['%app.root%']

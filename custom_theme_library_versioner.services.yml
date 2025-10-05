@@ -1,4 +1,0 @@
-services:
-  custom_theme_library_versioner.helper:
-    class: Drupal\custom_theme_library_versioner\CustomThemeLibraryVersionerHelper
-    arguments: ['%app.root%']

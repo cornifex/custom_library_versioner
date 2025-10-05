@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\custom_theme_library_versioner;
+namespace Drupal\custom_library_versioner;
 
 /**
  * Helper class for setting custom library versions.
  */
-class CustomThemeLibraryVersionerHelper {
+class CustomLibraryVersionerHelper {
 
   /**
    * @var string

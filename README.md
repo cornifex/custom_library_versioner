@@ -1,6 +1,6 @@
 ## INTRODUCTION
 
-The Custom Theme Library Versioner module is a DESCRIBE_THE_MODULE_HERE.
+The Custom Library Versioner module is a DESCRIBE_THE_MODULE_HERE.
 
 The primary use case for this module is:
 

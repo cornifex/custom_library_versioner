@@ -1,0 +1,5 @@
+name: 'Custom Library Versioner'
+type: module
+description: 'Provides version replacement for custom libraries with help from a version file.'
+package: Custom
+core_version_requirement: ^10 || ^11
