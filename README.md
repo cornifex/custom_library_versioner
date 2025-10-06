@@ -2,10 +2,11 @@
 
 Custom Library Versioner is a quality-of-life module designed to automatically
 assign version numbers to custom library assets (CSS and JavaScript files)
-based on a CUSTOM_LIBRARY_VERSION file outside of the web root. If the file is
-not found, Drupal's core version is used. This ensures that browsers cache-bust
-properly when sites are updated across releases, preventing users from seeing
-stale assets after deployments.
+based on a CUSTOM_LIBRARY_VERSION file outside of the web root. To use this
+feature, set your library's version to CUSTOM_LIBRARY_VERSION in your 
+`*.libraries.yml` file. If the version file is not found, Drupal's core version
+is used. This ensures that browsers cache-bust properly when sites are updated
+across releases, preventing users from seeing stale assets after deployments.
 
 The primary use case for this module is:
 
